@@ -5,16 +5,23 @@ body {
 
 h1, h2, h3, p, ul, li {
     font-family: 'Inter', sans-serif;
+    line-height: 1.5em;
+}
+
+ul.nav {
+    display: block;
+    padding: 0;
 }
 
 li {
     list-style-type: none;
-    display: inline-block;
-    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .header {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -31,12 +38,13 @@ a {
 a.active {
     border: 1px solid #D1512D;
     border-radius: 10px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
     color:#D1512D;
 }
 
 div.nav {
-    border-bottom:1px solid #F5E8E4;
+    border-bottom: 1px solid #F5E8E4;
+    padding-bottom: 10px;
 }
 
 
@@ -48,8 +56,8 @@ div.introduction {
     max-width: 400px;
 }
 
-h2.intro {
-    text-align: justify;
+h3.intro {
+    text-align: left;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -64,4 +72,5 @@ p.intro {
     border: 1px solid white;
     display: inline;
     width: 200px;
+    filter: saturate(110%) brightness(108%);
 }
