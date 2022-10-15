@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, p, ul, li {
+h1, h2, h3, h4, p, ul, li {
     font-family: 'Inter', sans-serif;
     line-height: 1.5em;
 }
@@ -19,8 +19,8 @@ ul.nav {
 
 li {
     list-style-type: none;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 30px 30px 30px;
+    display: inline;
 }
 
 .header {
@@ -40,6 +40,10 @@ a {
     font-size: 0.9em;
 }
 
+a:hover {
+    color: #D1512D;
+}
+
 a.active {
     border: 1px solid #D1512D;
     border-radius: 10px;
@@ -49,16 +53,39 @@ a.active {
 
 div.nav {
     border-bottom: 1px solid #F5E8E4;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+div.home-header {
+    padding: 100px 60px 40px 60px;
 }
 
 
 /*-----Index-------*/
-div.introduction {
-    padding: 60px 40px 60px 40px;
-    margin-left:auto;
+div.case-studies-div {
+    padding: 40px;
+    margin-left: auto;
     margin-right: auto;
     max-width: 400px;
+}
+
+div.introduction {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; 
+}
+
+div.case-study {
+    padding: 40px 40px 40px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 h3.intro {
@@ -67,10 +94,15 @@ h3.intro {
     padding-bottom: 10px;
 }
 
+h4.case-study {
+    padding-bottom: 50px;
+}
 
 p.intro {
     text-align: justify;
 }
+
+/*-----Images-------*/
 
 .cvphoto {
     border-radius: 50%;
@@ -78,4 +110,28 @@ p.intro {
     display: inline;
     width: 200px;
     filter: saturate(110%) brightness(108%);
+}
+
+.cover-photo {
+    max-width: 500px;
+    width: 60vw;
+    border-radius: 10px;
+}
+
+img.cover-photo:hover {
+    animation: scale 1.5s both;
+}
+
+@keyframes scale {
+    50% {
+      transform: scale(0.9);
+    }
+    
+    100% {
+        transform: scale(0.9);
+    }
+  }
+
+.case-study-full {
+    width: 100vw;
 }
