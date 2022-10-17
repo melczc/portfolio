@@ -19,7 +19,7 @@ ul.nav {
 
 li {
     list-style-type: none;
-    margin: 30px 30px 30px 30px;
+    margin: 30px 10px 30px 10px;
     display: inline;
 }
 
@@ -57,7 +57,7 @@ div.nav {
 }
 
 div.home-header {
-    padding: 100px 60px 40px 60px;
+    padding: 100px 40px 40px 40px;
 }
 
 
