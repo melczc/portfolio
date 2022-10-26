@@ -135,3 +135,36 @@ img.cover-photo:hover {
 .case-study-full {
     width: 100vw;
 }
+
+/*----To-do List JS---*/
+#new-task-form {
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    padding: 10px;
+}
+
+#new-task-submit {
+    
+}
+
+input, button {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+main {
+    flex: 1 1 0%;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
