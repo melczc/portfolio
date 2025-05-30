@@ -27,11 +27,37 @@
         </ul>
     </div>
     <div>
-            <img src="../images/Foodie Truck's Case Study.png" alt="ux-banner" class="case-study-full"></div>
-            <p><a href="../ux-case-studies.html">Back</a></p>
+        <div class="introduction">
+            <h3>Creative Manager</h3>
+            <p>This project is an idea generator for creatives who want to carefully manage their creative projects. It is important it doesn't feel like work. It consists of a flashcard randomizer and a canvas based mindmap feature.</p>
+            <li>1. there is a database where keywords and description or other info are stored</li>
+            <li>2. flashcard will take items from the database to display as keywords or cards to the user to choose (or randomly chosen automatically depending on the settings)</li>
+            <li>3. there is a login page so that all the information for each user is private.</li>
+            <li>4. after items are chosen it can be displayed in a Canvas area where the user can turn it into a mindmap and expand it further.</li>
+        </div>
+        <div>
+            <!-- login.html -->
+<form id="login-form">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit">Log In</button>
+  </form>
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+    const supabase = createClient('https://kfiyyqllakbeiouitbfd.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtmaXl5cWxsYWtiZWlvdWl0YmZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2MTIyMTMsImV4cCI6MjA2NDE4ODIxM30.jMCnJda5GvCQ58in8zJ3d8wYQPTWWJT5BV1KdYBg1pE')
+  
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const email = document.getElementById('email').value
+      const password = document.getElementById('password').value
+      const { user, error } = await supabase.auth.signInWithPassword({ email, password })
+      if (error) alert(error.message)
+      else window.location.href = 'dashboard.html'
+    })
+  </script>
         </div>
     <footer>
-        <p>© 2022 Webdesign + Code by Melanie</p>
+        <p>© 2025 Webdesign + Code by Melanie</p>
     </footer>
 </body>
 <script src="../script/app.js"></script>
